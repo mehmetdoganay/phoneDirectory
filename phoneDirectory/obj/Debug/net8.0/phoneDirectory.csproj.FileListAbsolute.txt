@@ -1,0 +1,14 @@
+C:\Projects\phoneDirectory\phoneDirectory\bin\Debug\net8.0\phoneDirectory.exe
+C:\Projects\phoneDirectory\phoneDirectory\bin\Debug\net8.0\phoneDirectory.deps.json
+C:\Projects\phoneDirectory\phoneDirectory\bin\Debug\net8.0\phoneDirectory.runtimeconfig.json
+C:\Projects\phoneDirectory\phoneDirectory\bin\Debug\net8.0\phoneDirectory.dll
+C:\Projects\phoneDirectory\phoneDirectory\bin\Debug\net8.0\phoneDirectory.pdb
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.AssemblyInfoInputs.cache
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.AssemblyInfo.cs
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.csproj.CoreCompileInputs.cache
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.dll
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\refint\phoneDirectory.dll
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.pdb
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.genruntimeconfig.cache
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\ref\phoneDirectory.dll
