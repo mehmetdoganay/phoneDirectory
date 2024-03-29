@@ -8,12 +8,12 @@ namespace phoneDirectory
 {
     public class Person
     {
-        public int phoneNumber;
+        public string phoneNumber;
         public string name;
         public string surName;
 
 
-        public int PhoneNumber
+        public string PhoneNumber
         {
             get { return phoneNumber; }
             set { phoneNumber = value; }

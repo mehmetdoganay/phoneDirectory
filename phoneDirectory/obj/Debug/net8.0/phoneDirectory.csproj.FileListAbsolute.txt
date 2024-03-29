@@ -12,3 +12,4 @@ C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\refint\phoneDirectory
 C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.pdb
 C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.genruntimeconfig.cache
 C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\ref\phoneDirectory.dll
+C:\Projects\phoneDirectory\phoneDirectory\obj\Debug\net8.0\phoneDirectory.sourcelink.json

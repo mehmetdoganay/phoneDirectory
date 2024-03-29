@@ -11,17 +11,20 @@ namespace phoneDirectory
         directoryManage directoryManage = new directoryManage();
         public Start()
         {
-            Console.WriteLine("Yapmak İstediğiniz işlemi seçin");
-            Console.WriteLine("1- Yeni Numara Kaydetmek");
-            Console.WriteLine("2- Varolan Numarayı Silmek");
-            Console.WriteLine("3- Varolan Numarayı Güncelleme");
-            Console.WriteLine("4- Rehberi Listelemek");
-            Console.WriteLine("5- Rehberde Arama Yapmak﻿");
+            while (true)
+            {
+                Console.WriteLine("Yapmak İstediğiniz işlemi seçin");
+                Console.WriteLine("1- Yeni Numara Kaydetmek");
+                Console.WriteLine("2- Varolan Numarayı Silmek");
+                Console.WriteLine("3- Varolan Numarayı Güncelleme");
+                Console.WriteLine("4- Rehberi Listelemek");
+                Console.WriteLine("5- Rehberde Arama Yapmak﻿");
+                Console.WriteLine("Çıkış için herhangi bir tuşa basın.");
+                Console.Write("-------> ");
 
-            int selectChoose = Convert.ToInt32(Console.ReadLine());
-            select(selectChoose);
-
-
+                int selectChoose = Convert.ToInt32(Console.ReadLine());
+                select(selectChoose);
+            }
         }
 
         public void select(int select)
@@ -42,6 +45,8 @@ namespace phoneDirectory
                     break;
                 case 5:
                     directoryManage.personSearch();
+                    break;
+                default:
                     break;
             }
         }
