@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\phoneDirectory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|c:\\projects\\phonedirectory\\phonedirectory\\directorymanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|solutionrelative:phonedirectory\\directorymanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|c:\\projects\\phonedirectory\\phonedirectory\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|solutionrelative:phonedirectory\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|c:\\projects\\phonedirectory\\phonedirectory\\directorymanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|solutionrelative:phonedirectory\\directorymanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{894FFC87-15A7-4003-B15A-2646F0BC5E50}|phoneDirectory\\phoneDirectory.csproj|c:\\projects\\phonedirectory\\phonedirectory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,30 +26,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Start.cs",
               "DocumentMoniker": "C:\\Projects\\phoneDirectory\\phoneDirectory\\Start.cs",
               "RelativeDocumentMoniker": "phoneDirectory\\Start.cs",
               "ToolTip": "C:\\Projects\\phoneDirectory\\phoneDirectory\\Start.cs",
               "RelativeToolTip": "phoneDirectory\\Start.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAQAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T22:38:00.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "directoryManage.cs",
               "DocumentMoniker": "C:\\Projects\\phoneDirectory\\phoneDirectory\\directoryManage.cs",
               "RelativeDocumentMoniker": "phoneDirectory\\directoryManage.cs",
               "ToolTip": "C:\\Projects\\phoneDirectory\\phoneDirectory\\directoryManage.cs",
               "RelativeToolTip": "phoneDirectory\\directoryManage.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAwwHUAAAAAAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAwwJIAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T22:27:32.993Z",
               "EditorCaption": ""
@@ -64,8 +64,7 @@
               "RelativeToolTip": "phoneDirectory\\Person.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T22:03:47.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T22:03:47.175Z"
             },
             {
               "$type": "Document",
@@ -77,8 +76,7 @@
               "RelativeToolTip": "phoneDirectory\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T01:24:12.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T01:24:12.604Z"
             }
           ]
         }

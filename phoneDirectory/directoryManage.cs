@@ -73,13 +73,59 @@ namespace phoneDirectory
                 }
                 
             }
-
-
         }
 
         public void personUpdate()
         {
+            personList();
+            Console.Write("Düzenlemek istediğiniz kişinin adını giriniz: ");
+            string deleteName = Console.ReadLine();
 
+
+            for (int i = 0; i < disListe.Count; i++)
+            {
+                int index = disListe[i][1].IndexOf(deleteName);
+
+                if (index != -1) // Aranan isim bulunduysa
+                {
+                    Console.WriteLine("Düzenlemek istediğiniz kişiden emin olmak için kişinin tam ismini giriniz");
+                    string fullName = Console.ReadLine();
+
+                    if (disListe[i][1] == fullName)
+                    {
+                        Console.WriteLine($"İsim: {disListe[i][1]}");
+                        Console.WriteLine($"Soyisim: {disListe[i][2]}");
+                        Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
+                        Console.WriteLine();
+
+                        Console.WriteLine("İsim düzenle");
+                        Console.Write("---->");
+                        disListe[i][1] = Console.ReadLine();
+                        Console.WriteLine("Soyisim düzenle");
+                        Console.Write("---->");
+                        disListe[i][2] = Console.ReadLine();
+                        Console.WriteLine("Numarayı Düzenle");
+                        Console.Write("---->");
+                        disListe[i][0] = Console.ReadLine();
+
+                        Console.WriteLine("Kişi bilgileri düzenlendi.");
+
+                        Console.WriteLine($"İsim: {disListe[i][1]}");
+                        Console.WriteLine($"Soyisim: {disListe[i][2]}");
+                        Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
+                        Console.WriteLine();
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("İsim doğru girilmedi lütfen yeni bir işlem seçin.");
+                        Console.WriteLine();
+                        break;
+                    }
+                    break;
+
+                }
+            }
         }
 
         public void personList()

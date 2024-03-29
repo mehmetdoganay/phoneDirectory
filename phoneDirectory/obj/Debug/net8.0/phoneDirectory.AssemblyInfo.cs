@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("phoneDirectory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da51a694092f6e2e29abb263c3c3ec9374bf9461")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d34878d0bd68e4ddd7259b4a0c4d9c4b0bab6ad4")]
 [assembly: System.Reflection.AssemblyProductAttribute("phoneDirectory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("phoneDirectory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
