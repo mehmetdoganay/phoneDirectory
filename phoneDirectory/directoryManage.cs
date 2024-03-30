@@ -11,7 +11,7 @@ namespace phoneDirectory
     {
         Person person = new Person();
 
-        List<List<string>> disListe = new List<List<string>>();
+        List<List<string>> indexList = new List<List<string>>();
 
         public void personSave()
         {
@@ -29,7 +29,7 @@ namespace phoneDirectory
             icListe1.Add(person.name);
             icListe1.Add(person.surName);
 
-            disListe.Add(icListe1);
+            indexList.Add(icListe1);
 
             Console.WriteLine("! " + icListe1[1] + " Kişisi Listeye eklendi.");
             personList();
@@ -37,131 +37,183 @@ namespace phoneDirectory
 
         public void personDelete()
         {
-            personList();
-            Console.Write("Silmek istediğiniz kişinin adını giriniz: ");
-            string deleteName = Console.ReadLine();
-
-
-            for (int i = 0; i < disListe.Count; i++)
+            if(IsListEmpty(indexList))
             {
-                int index = disListe[i][1].IndexOf(deleteName);
-
-                if (index != -1) // Aranan isim bulunduysa
-                {
-                    Console.WriteLine($"İsim: {disListe[i][1]}");
-                    Console.WriteLine($"Soyisim: {disListe[i][2]}");
-                    Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
-                    Console.WriteLine(); 
-                    Console.WriteLine("Silmek istediğiniz emin olmak için kişinin tam ismini giriniz");
-                    string fullName = Console.ReadLine();
-
-                    if(disListe[i][1] == fullName)
-                    {
-                        disListe.RemoveAt(i);
-                        Console.WriteLine(fullName + "Adlı kişi listenizden silindi.");
-                        Console.WriteLine();
-
-                    }else
-                    {
-                        Console.WriteLine("İsim doğru girilmedi lütfen yeni bir işlem seçin.");
-                        Console.WriteLine();
-                        break;
-                    }
-                
-
-                    
-                }
-                
+                Console.WriteLine("Rehberde kişi yok. ");
+                Console.WriteLine();
             }
+            else
+            {
+                personList();
+                Console.Write("Silmek istediğiniz kişinin adını giriniz: ");
+                string deleteName = Console.ReadLine();
+
+
+                for (int i = 0; i < indexList.Count; i++)
+                {
+                    int index = indexList[i][1].IndexOf(deleteName);
+
+                    if (index != -1) // Aranan isim bulunduysa
+                    {
+                        Console.WriteLine($"İsim: {indexList[i][1]}");
+                        Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                        Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
+                        Console.WriteLine();
+                        Console.WriteLine("Silmek istediğiniz kişiden emin olmak için kişinin tam ismini giriniz");
+                        Console.Write("---->");
+                        string fullName = Console.ReadLine();
+
+                        if (indexList[i][1] == fullName)
+                        {
+                            indexList.RemoveAt(i);
+                            Console.WriteLine(fullName + " Adlı kişi listenizden silindi.");
+                            Console.WriteLine();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("İsim doğru girilmedi lütfen yeni bir işlem seçin.");
+                            Console.WriteLine();
+                            break;
+                        }
+                    }
+
+                }
+                personList();
+            }
+            
         }
 
         public void personUpdate()
         {
-            personList();
-            Console.Write("Düzenlemek istediğiniz kişinin adını giriniz: ");
-            string deleteName = Console.ReadLine();
-
-
-            for (int i = 0; i < disListe.Count; i++)
+            if (IsListEmpty(indexList))
             {
-                int index = disListe[i][1].IndexOf(deleteName);
+                Console.WriteLine("Rehberde kişi yok. ");
+                Console.WriteLine();
+            }
+            else
+            {
+                personList();
+                Console.Write("Düzenlemek istediğiniz kişinin adını giriniz: ");
+                string deleteName = Console.ReadLine();
 
-                if (index != -1) // Aranan isim bulunduysa
+
+                for (int i = 0; i < indexList.Count; i++)
                 {
-                    Console.WriteLine("Düzenlemek istediğiniz kişiden emin olmak için kişinin tam ismini giriniz");
-                    string fullName = Console.ReadLine();
+                    int index = indexList[i][1].IndexOf(deleteName);
 
-                    if (disListe[i][1] == fullName)
+                    if (index != -1) // Aranan isim bulunduysa
                     {
-                        Console.WriteLine($"İsim: {disListe[i][1]}");
-                        Console.WriteLine($"Soyisim: {disListe[i][2]}");
-                        Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
+                        Console.WriteLine($"İsim: {indexList[i][1]}");
+                        Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                        Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
                         Console.WriteLine();
 
-                        Console.WriteLine("İsim düzenle");
+                        Console.WriteLine("Düzenlemek istediğiniz kişiden emin olmak için kişinin tam ismini giriniz");
                         Console.Write("---->");
-                        disListe[i][1] = Console.ReadLine();
-                        Console.WriteLine("Soyisim düzenle");
-                        Console.Write("---->");
-                        disListe[i][2] = Console.ReadLine();
-                        Console.WriteLine("Numarayı Düzenle");
-                        Console.Write("---->");
-                        disListe[i][0] = Console.ReadLine();
+                        string fullName = Console.ReadLine();
 
-                        Console.WriteLine("Kişi bilgileri düzenlendi.");
+                        if (indexList[i][1] == fullName)
+                        {
+                            Console.WriteLine($"İsim: {indexList[i][1]}");
+                            Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                            Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
+                            Console.WriteLine();
 
-                        Console.WriteLine($"İsim: {disListe[i][1]}");
-                        Console.WriteLine($"Soyisim: {disListe[i][2]}");
-                        Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
-                        Console.WriteLine();
+                            Console.WriteLine("İsim düzenle");
+                            Console.Write("---->");
+                            indexList[i][1] = Console.ReadLine();
+                            Console.WriteLine("Soyisim düzenle");
+                            Console.Write("---->");
+                            indexList[i][2] = Console.ReadLine();
+                            Console.WriteLine("Numarayı Düzenle");
+                            Console.Write("---->");
+                            indexList[i][0] = Console.ReadLine();
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("İsim doğru girilmedi lütfen yeni bir işlem seçin.");
-                        Console.WriteLine();
+                            Console.WriteLine("Kişi bilgileri düzenlendi.");
+                            Console.WriteLine();
+
+                            Console.WriteLine($"İsim: {indexList[i][1]}");
+                            Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                            Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
+                            Console.WriteLine();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("İsim doğru girilmedi lütfen yeni bir işlem seçin.");
+                            Console.WriteLine();
+                            break;
+                        }
                         break;
-                    }
-                    break;
 
+                    }
                 }
             }
+            
         }
 
         public void personList()
         {
-            Console.WriteLine();
-            Console.WriteLine("**********************Rehber**********************");
-            for (int i = 0; i < disListe.Count; i++)
+            if(IsListEmpty(indexList))
             {
-                Console.WriteLine($"Kişi {i + 1}:");
-                Console.WriteLine($"İsim: {disListe[i][1]}");
-                Console.WriteLine($"Soyisim: {disListe[i][2]}");
-                Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
+                Console.WriteLine("Rehberde kişi yok. ");
                 Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("**********************Rehber**********************");
+                for (int i = 0; i < indexList.Count; i++)
+                {
+                    Console.WriteLine($"Kişi {i + 1}:");
+                    Console.WriteLine($"İsim: {indexList[i][1]}");
+                    Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                    Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
+                    Console.WriteLine();
+                }
             }
         }
 
         public void personSearch()
         {
-            Console.Write("Aramak istediğiniz kişinin adını giriniz: ");
-            string searchPerson = Console.ReadLine();
-
-            for (int i = 0; i < disListe.Count; i++)
+            if(IsListEmpty(indexList))
             {
-                int index = disListe[i][1].IndexOf(searchPerson);
+                Console.WriteLine("Rehberde kişi yok. ");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.Write("Aramak istediğiniz kişinin adını giriniz: ");
+                string searchPerson = Console.ReadLine();
 
-                if (index != -1)
+                for (int i = 0; i < indexList.Count; i++)
                 {
-                    Console.WriteLine($"İsim: {disListe[i][1]}");
-                    Console.WriteLine($"Soyisim: {disListe[i][2]}");
-                    Console.WriteLine($"Telefon Numarası: {disListe[i][0]}");
-                    Console.WriteLine();
+                    int index = indexList[i][1].IndexOf(searchPerson);
+
+                    if (index != -1)
+                    {
+                        Console.WriteLine($"İsim: {indexList[i][1]}");
+                        Console.WriteLine($"Soyisim: {indexList[i][2]}");
+                        Console.WriteLine($"Telefon Numarası: {indexList[i][0]}");
+                        Console.WriteLine();
+                    }
                 }
                 Console.WriteLine("Aradığın isimdeki tüm kişiler listelendi.");
+                Console.WriteLine();
+            } 
+        }
 
+        static bool IsListEmpty<T>(List<T> list)
+        {
+            // Listenin null olup olmadığı kontrol ediliyor
+            if (list == null)
+            {
+                throw new ArgumentNullException(nameof(list), "Liste null referansıyla gönderilemez.");
             }
 
+            // Listenin eleman sayısı 0 mı kontrol ediliyor
+            return list.Count == 0;
         }
 
     }
